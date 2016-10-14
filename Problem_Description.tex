@@ -15,41 +15,51 @@
 \usepackage{enumitem}
 \usepackage{pstricks, pst-node}
 
-\usepackage{geometry}
-\geometry{textheight=9.5 in, textwidth=7.0 in}
+\usepackage{textcomp}
+\usepackage[margin=0.75in]{geometry}
 
 \parindent = 0.0 in
 \parskip = 0.1 in
-\voffset = 0.75 in
-
-\title{Problem Statement}
-\date{October 12, 2016}
-\author{Cameron Barrie, Kevin Guan, Xiaoyong Zheng}
 
 \begin{document}
+
+\title{Problem Statement for\\ Phone Service Alert Application}
+
+\author{
+\IEEEauthorblockN{Xiaoyong Zheng}
+\IEEEauthorblockN{Kevin Guan}
+\IEEEauthorblockN{Cameron Barrie}
+\IEEEauthorblockA{\\CS Senior Capstone\\Fall 2016}
+}
+
 \maketitle
 \begin{abstract}
-        When people are traveling, they are usually using their cell phones or
-        one of its features. Unfortunately, they are often left disappointed
-        because many areas are dead zones. Phone service availability is vital,
-        so they will always check their phones for service. Our project, the
-        Phone Service Alert Application, will focus on eliminating this issue by
-        notifying users when they enter areas with service. The application will
-        be integrated with detailed coverage maps from service providers,
-        allowing the users to view the coverage data based on their location.
-        Our application will ensure that our users will not have to check their
-        phones fanatically for service availability. Users will also have the
+        People go everywhere with their cell phones in the modern world. If they are not using their phones to make a call, then they are most likely using
+        one of its features. Unfortunately, many people are often found disconcerted
+        with their cell phones, since unexpected dead zones can be prominent in many locations. 
+        Coverage availability plays an integral part of people’s daily lives and routines,
+        so they will always need their phones to have service. Our project, the
+        Phone Service Alert Application, will focus on relieving the frustrations 
+        caused by coverage drops. If somebody's phone loses coverage, the application will
+        notify the user when service is available again. The application will also
+        integrate detailed coverage maps from service providers,
+        allowing the users to view coverage data that is based on their current location and
+        guide them to an area with better service. Users will also have
         options to customize their notifications and alerts. Our product will
         bring our users peace of mind, knowing that their phones will notify
-        them when service will be available again.
+        them when service will be available to use again.
 \end{abstract}
 \pagebreak
 
-% Problem Definition
+\section*{Problem Definition}
+The majority of America\textquotesingle s population heavily depends on network coverage for making calls and accessing the Internet. 
+The cellphone market in the United States is massive with 92\% of American adults own a cellphone\cite{Zickuhr}, making the demand for reliable service tremendous. 
+However, companies have limited resources and cannot always satisfy the masses accordingly. Consequently, the case is common for many users, especially travelers, 
+to face abrupt coverage drops and foment heartrending resentments toward their coverage providers. These users must meticulously 
+wait and check their mobile devices until their coverage returns before they can return to their work or activities. 
+These minutes spent checking for coverage add up to large sums of lost time that could be better invested elsewhere. 
 
-
-% Problem Solution
-\par
+\section*{Proposed Solution}
 To implement a solution to this problem, we propose to create develop a phone
 service having the capabilities to alert the user before he or she
 crosses a service area boundary. To be specific, our solution will be a smart
@@ -96,8 +106,43 @@ to show off a video or other media of the application in action. Additionally,
 we also hope to have a working version of the application on the app store so
 that we can encourage others to download it.\par
 
-% Performance Metrics
+\section*{Performance Metrics}
+The responses from the client's feedback and the quality of fulfillment to the client's requests
+will be the key determinants in measuring our performance metrics. The client construed a defined set of objectives 
+for us to complete. The project team will meet every week to access current progress and receive assessments and
+future expectations from our client. By the end of each meeting, the project team will plan suitable objectives to complete for the following week. 
+\par
+Since our client has already provided a set of objectives for the team, we will be utlizing them to create an appropriate
+plan of actions and milestones to aim for. Currently, we will need our application to be functional with its foundational features that will
+allow the app to detect coverage availability from the user's current location. The first 
+function the will need to be implemented is an automatic network provider recognition system and 
+appropriate map loading. Certainly, if there are no available network providers that can be recognized, 
+users can select a provider and load their maps. Secondly, we will also need to implement location 
+services. Location services will be crucial for recognizing users’ locations and judging the availability
+of coverage wihin the user's viscinity. Thirdly, we will need to integrate the app with notification services. The aim is to 
+enable the app to notify the users whenever they enter any area with coverage if their service was ever dropped. 
+The last stage will involve receiving feedback on the app's features. We want to establish a small following of loyal users 
+to test our app and gather statistics, reviews and testimonials. After we 
+received enough information, we can plan accordingly for further improvements and features for 
+upcoming versions. When we meet our client's objectives, we will begin working on implementing extra features in newer versions, such as
+a feedback system for gathering user criticisms and reviews. 
+Our ultimate goal is create an app that has a nice user interface, a notification system that alerts 
+users when their dropped service returns, an automatic network provider recognizer, and a reliable coverage map loader. 
 
+
+\bibliographystyle{IEEEtran}
+\bibliography{lesson1}
+
+\noindent\begin{tabular}{ll}\\
+\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+Client & Date\\[8ex]% adds space between the two sets of signatures
+\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+Project Member & Date\\[8ex]
+\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+Project Member & Date\\[8ex]
+\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+Project Member & Date\\[8ex]
+\end{tabular}
 
 \end{document}
 
